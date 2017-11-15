@@ -1,0 +1,20 @@
+{% extends "django_celery_async_view/base.html" %}
+{% load staticfiles i18n %}
+
+{% block content %}
+    <b>LOADING ...</b>
+{% endblock content %}
+
+{% block javascript %}
+    {{ block.super }}
+    <script src="{% static "django_celery_async_view/django_celery_async_view.js" %}"></script>
+
+    <script>
+        $(document).ready(function(){
+            var task_id = '{{task_id}}';
+            AsyncViews.initAsyncView({
+                task_id: task_id
+            });
+        });
+    </script>
+{% endblock javascript %}

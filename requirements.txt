@@ -1,0 +1,4 @@
+# Additional requirements go here
+
+django-db-file-storage==0.4.3
+six==1.11.0

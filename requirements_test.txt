@@ -1,0 +1,36 @@
+-r requirements.txt
+
+# POSTGRES
+psycopg2==2.7.1
+
+future==0.16.0
+
+# TESTING
+coverage==4.4.1
+mock>=1.0.1
+flake8>=2.1.0
+tox>=1.7.0
+codecov>=2.0.0
+docutils==0.14
+pygments==2.2.0
+
+# PYTEST
+pytest==3.2.3
+pytest-cov==2.5.1
+pytest-django==3.1.2
+pytest-pythonpath==0.7.1
+
+check-manifest
+
+# CELERY
+celery==3.1.25
+# celery[redis]==3.1.25
+
+# celerytest==0.1.1
+# Need the github version PyPi version is broken
+git+git://github.com/RentMethod/celerytest.git@42edb92b32c7d5dd9576c2059bdb24b76198cad7#egg=celerytest
+
+threadpool==1.3.2  # celery
+django-celery==3.2.1
+
+

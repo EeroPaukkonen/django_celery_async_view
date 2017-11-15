@@ -1,0 +1,40 @@
+{% extends "django_celery_async_view/base.html" %}
+
+{% block content %}
+    {% if slow_example %}
+        <h1>Slow</h1>
+    {% else %}
+        <h1>Fast</h1>
+    {% endif %}
+    <div class="">
+        <p>
+            This page was loaded asynchronously.
+            {% if slow_example %}
+                Here is <a href="/">fast page link</a>.
+            {% else %}
+                It loaded quickly because the task was small.
+                Here is <a href="/slow/">slow page link</a>.
+                This task takes 15s + the time it takes to poll.
+            {% endif %}
+        </p>
+        <p>
+            Good way to see what is happening is by using
+            Network panel in the browser's builtin Inspect tool.
+        </p>
+        <p>
+            Now here is an example of the Async Download.
+        </p>
+        <p>
+            <button class="async-download-button"
+                    data-href="/example-download/">
+                Async Download Small Task ( Fast )
+            </button>
+        </p>
+        <p>
+            <button class="async-download-button"
+                    data-href="/example-slow-download/">
+                Async Download Big Task ( Slow &gt; 15s )
+            </button>
+        </p>
+    </div>
+{% endblock content %}
