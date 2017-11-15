@@ -5,6 +5,8 @@ pip install twine
 setup.py sdist bdist_wheel
 # TEST PYPI
 twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+# PYPI
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
 """
 import os
 import re

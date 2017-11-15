@@ -3,6 +3,9 @@
 django_celery_async_view
 ========================
 
+.. image:: https://badge.fury.io/py/django-celery-async-view.svg
+    :target: https://badge.fury.io/py/django-celery-async-view
+
 .. image:: https://travis-ci.org/EeroPaukkonen/django_celery_async_view.svg?branch=master
     :target: https://travis-ci.org/EeroPaukkonen/django_celery_async_view
 
@@ -12,12 +15,6 @@ django_celery_async_view
 Asynchronously load view or download file in django.
 This is done by rendering view or creating file in celery task and polling it in javascript.
 
--------------
-Documentation
--------------
-
-The full documentation is at https://django_celery_async_view.readthedocs.io.
-
 ----------
 Quickstart
 ----------
@@ -25,6 +22,7 @@ Quickstart
 Install django_celery_async_view::
 
     pip install django_celery_async_view
+    python manage.py migrate django_celery_async_view
 
 Add it to your `INSTALLED_APPS`:
 
@@ -206,7 +204,7 @@ What needs to be fixed for Python3 support
 
     celery\result.py:175: TypeError
 
-
+-------
 Credits
 -------
 
