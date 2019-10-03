@@ -6,7 +6,7 @@
 
 future==0.16.0
 
-Django==1.11.7
+Django==1.11.23
 
 # celery
 celery[redis]==3.1.25
