@@ -1,5 +1,5 @@
 -r requirements.txt
-Django==1.11.7
+Django==1.11.29
 bumpversion==0.5.3
 wheel==0.30.0
 celery==3.1.25
