@@ -12,7 +12,7 @@ flake8>=2.1.0
 tox>=1.7.0
 codecov>=2.0.0
 docutils==0.14
-pygments==2.2.0
+pygments==2.7.4
 
 # PYTEST
 pytest==3.2.3
