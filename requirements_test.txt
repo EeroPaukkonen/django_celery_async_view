@@ -23,7 +23,7 @@ pytest-pythonpath==0.7.1
 check-manifest
 
 # CELERY
-celery==3.1.25
+celery==5.2.2
 # celery[redis]==3.1.25
 
 # celerytest==0.1.1

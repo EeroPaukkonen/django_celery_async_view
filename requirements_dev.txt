@@ -2,4 +2,4 @@
 Django==1.11.7
 bumpversion==0.5.3
 wheel==0.30.0
-celery==3.1.25
+celery==5.2.2
